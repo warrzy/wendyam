@@ -19,7 +19,7 @@ export const SITE = {
   capital: "10 000 000 FCFA",
   fiscalRegime: "RSI",
   incorporationDate: "16 décembre 2025",
-  manager: "Monsieur Yamba Donald Charles KABORÉ",
+  manager: "Monsieur Yamba KABORÉ",
   disclaimer:
     "Wendyam Finance intervient en tant que structure financière.",
 } as const;
