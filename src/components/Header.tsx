@@ -42,19 +42,19 @@ export function Header() {
 
         <nav className="hidden items-center gap-2 text-sm md:flex">
           <Link
-            className="wf-btn inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-[color:var(--brand-red)] transition hover:bg-white/10"
+            className="wf-btn inline-flex items-center justify-center rounded-full border border-[rgba(200,162,74,.18)] bg-[color:var(--brand-red)] px-4 py-2 text-white transition hover:bg-[color:var(--brand-bordeaux)]"
             href="/"
           >
             Accueil
           </Link>
           <Link
-            className="wf-btn inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-[color:var(--brand-red)] transition hover:bg-white/10"
+            className="wf-btn inline-flex items-center justify-center rounded-full border border-[rgba(200,162,74,.18)] bg-[color:var(--brand-red)] px-4 py-2 text-white transition hover:bg-[color:var(--brand-bordeaux)]"
             href="/gouvernance"
           >
             Gouvernance
           </Link>
           <Link
-            className="wf-btn inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-[color:var(--brand-red)] transition hover:bg-white/10"
+            className="wf-btn inline-flex items-center justify-center rounded-full border border-[rgba(200,162,74,.18)] bg-[color:var(--brand-red)] px-4 py-2 text-white transition hover:bg-[color:var(--brand-bordeaux)]"
             href="/contact"
           >
             Contacts
@@ -107,21 +107,21 @@ export function Header() {
               <Link
                 href="/"
                 onClick={() => setMobileOpen(false)}
-                className="wf-btn rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-[color:var(--brand-red)] transition hover:bg-white/10"
+                className="wf-btn rounded-2xl border border-[rgba(200,162,74,.18)] bg-[color:var(--brand-red)] px-4 py-3 text-white transition hover:bg-[color:var(--brand-bordeaux)]"
               >
                 Accueil
               </Link>
               <Link
                 href="/gouvernance"
                 onClick={() => setMobileOpen(false)}
-                className="wf-btn rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-[color:var(--brand-red)] transition hover:bg-white/10"
+                className="wf-btn rounded-2xl border border-[rgba(200,162,74,.18)] bg-[color:var(--brand-red)] px-4 py-3 text-white transition hover:bg-[color:var(--brand-bordeaux)]"
               >
                 Gouvernance
               </Link>
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="wf-btn rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-[color:var(--brand-red)] transition hover:bg-white/10"
+                className="wf-btn rounded-2xl border border-[rgba(200,162,74,.18)] bg-[color:var(--brand-red)] px-4 py-3 text-white transition hover:bg-[color:var(--brand-bordeaux)]"
               >
                 Contacts
               </Link>
