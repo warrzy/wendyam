@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SITE, toTelHref, toWhatsAppHref } from "@/lib/site";
+import { SITE } from "@/lib/site";
 
 function IconWhatsApp(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -75,28 +75,6 @@ export function Header() {
             Contact
           </Link>
         </nav>
-
-        <div className="hidden items-center gap-3 text-xs text-white/75 sm:flex">
-          <a
-            href={toTelHref(SITE.phonePrimaryE164)}
-            className="wf-btn inline-flex items-center rounded-full border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/85 transition hover:bg-white/10"
-          >
-            Appeler
-          </a>
-          <a
-            href={toWhatsAppHref(
-              SITE.whatsappE164,
-              "Bonjour WENDYAM FINANCE, je souhaite un accompagnement."
-            )}
-            className="wf-btn inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/85 transition hover:bg-white/10"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Contacter sur WhatsApp"
-          >
-            <IconWhatsApp className="h-4 w-4" />
-            WhatsApp
-          </a>
-        </div>
       </div>
 
       <div className="hidden sm:block">
