@@ -66,10 +66,10 @@ export default function ContactPage() {
                 <option value="" disabled>
                   Choisir
                 </option>
-                <option>Appui & Conseil en Finance</option>
-                <option>Étude & Projets d’Investissement</option>
-                <option>Structuration & Gestion d’Entreprises</option>
-                <option>Intermédiation & Mobilisation de Financement</option>
+                <option>Mobile Money et transfert</option>
+                <option>Change manuel</option>
+                <option>Produits financiers</option>
+                <option>Accompagnement</option>
                 <option>Autre</option>
               </select>
             </label>
