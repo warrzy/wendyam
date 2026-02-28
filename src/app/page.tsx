@@ -127,16 +127,16 @@ export default function Home() {
             </p>
             <p className="mt-3 text-sm text-white/65">Ouagadougou — interventions sur demande.</p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-7 flex flex-col gap-2 sm:mt-8 sm:gap-3 sm:flex-row">
               <a
                 href="#contact"
-                className="wf-btn inline-flex h-11 items-center justify-center rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-6 text-sm font-semibold text-white transition hover:bg-[color:var(--btn-primary-hover)]"
+                className="wf-btn inline-flex h-10 items-center justify-center rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-5 text-sm font-semibold text-white transition hover:bg-[color:var(--btn-primary-hover)] sm:h-11 sm:px-6"
               >
                 Nous contacter
               </a>
               <a
                 href="/contact"
-                className="wf-btn inline-flex h-11 items-center justify-center rounded-full border border-white/15 bg-transparent px-5 text-sm font-semibold text-white/80 transition hover:bg-white/5 hover:text-white"
+                className="wf-btn inline-flex h-10 items-center justify-center rounded-full border border-white/15 bg-transparent px-4 text-sm font-semibold text-white/80 transition hover:bg-white/5 hover:text-white sm:h-11 sm:px-5"
               >
                 Contact rapide
               </a>
