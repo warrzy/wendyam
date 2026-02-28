@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden pb-10 sm:pb-16">
       <section className="wf-reveal wf-card wf-hero wf-dark rounded-3xl border p-6 sm:p-10 lg:p-12">
-        <div className="grid gap-10">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs text-white/80">
               <span className="font-medium text-white">Autorité</span>
@@ -140,6 +140,24 @@ export default function Home() {
               >
                 Contact rapide
               </a>
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            <div className="wf-visual-static" aria-label="Rubrique">
+              <div className="text-lg font-semibold text-white/85">Nos offres</div>
+              <div className="mt-5 grid gap-3">
+                {[
+                  "Mobile Money et transfert",
+                  "Change manuel",
+                  "Produits financiers",
+                  "Accompagnement",
+                ].map((t) => (
+                  <div key={t} className="wf-visual-static-item">
+                    <div className="text-sm font-semibold text-white/85">{t}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
