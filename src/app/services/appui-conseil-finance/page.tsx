@@ -4,14 +4,14 @@ import { ServicePageShell } from "@/components/ServicePageShell";
 export const metadata: Metadata = {
   title: "Appui & Conseil en Finance",
   description:
-    "Pilotage financier, analyse et optimisation pour mieux décider. Cabinet de conseil non bancaire à Ouagadougou.",
+    "Pilotage financier, analyse et optimisation pour mieux décider à Ouagadougou.",
 };
 
 export default function ServicePage() {
   return (
     <ServicePageShell
       title="Appui & Conseil en Finance"
-      description="Nous vous aidons à comprendre vos chiffres, structurer votre suivi financier et prendre des décisions sereines. Cabinet de conseil et d’accompagnement financier — non bancaire."
+      description="Nous vous aidons à comprendre vos chiffres, structurer votre suivi financier et prendre des décisions sereines."
       ctaLabel="Nous contacter"
       ctaHref="/contact"
     >

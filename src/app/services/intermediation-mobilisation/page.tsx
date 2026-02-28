@@ -4,14 +4,14 @@ import { ServicePageShell } from "@/components/ServicePageShell";
 export const metadata: Metadata = {
   title: "Intermédiation & Mobilisation de Financement",
   description:
-    "Préparation du dossier, mise en relation et accompagnement dans la recherche de financement (cabinet non bancaire) à Ouagadougou.",
+    "Préparation du dossier, mise en relation et accompagnement dans la recherche de financement à Ouagadougou.",
 };
 
 export default function ServicePage() {
   return (
     <ServicePageShell
       title="Intermédiation & Mobilisation de Financement"
-      description="Nous vous accompagnons dans la structuration des informations financières et la préparation d’un dossier crédible. Nous intervenons en cabinet de conseil — non bancaire."
+      description="Nous vous accompagnons dans la structuration des informations financières et la préparation d’un dossier crédible."
       ctaLabel="Nous contacter"
       ctaHref="/contact"
     >

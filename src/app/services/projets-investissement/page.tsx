@@ -4,14 +4,14 @@ import { ServicePageShell } from "@/components/ServicePageShell";
 export const metadata: Metadata = {
   title: "Projets d’Investissement",
   description:
-    "Étude, chiffrage, rentabilité et dossier structuré pour vos projets d’investissement. Cabinet non bancaire à Ouagadougou.",
+    "Étude, chiffrage, rentabilité et dossier structuré pour vos projets d’investissement à Ouagadougou.",
 };
 
 export default function ServicePage() {
   return (
     <ServicePageShell
       title="Étude & Réalisation de Projets d’Investissement"
-      description="De l’idée au dossier crédible : hypothèses, chiffrage, scénarios, analyse de rentabilité et plan de déploiement. Cabinet de conseil — non bancaire."
+      description="De l’idée au dossier crédible : hypothèses, chiffrage, scénarios, analyse de rentabilité et plan de déploiement."
       ctaLabel="Nous contacter"
       ctaHref="/contact"
     >

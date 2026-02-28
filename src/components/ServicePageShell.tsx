@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { SITE } from "@/lib/site";
 
 type Props = {
   title: string;
@@ -38,19 +39,13 @@ export function ServicePageShell({
           >
             {ctaLabel}
           </a>
-          <a
-            href="/services"
-            className="wf-btn inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 text-sm font-semibold text-white/90 transition hover:bg-white/10"
-          >
-            Tous les services
-          </a>
         </div>
       </section>
 
       {children}
 
       <section className="wf-reveal wf-card wf-dark mt-8 rounded-3xl border p-6 text-sm text-white/70">
-        WENDYAM FINANCE intervient en tant que cabinet de conseil et d’accompagnement financier et n’est pas un établissement bancaire, ni un établissement de crédit.
+        {SITE.disclaimer}
       </section>
     </div>
   );

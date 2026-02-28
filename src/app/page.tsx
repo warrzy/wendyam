@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
+import { SITE } from "@/lib/site";
 
 export default function Home() {
   return (
@@ -101,16 +102,28 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-6 wf-slogan-ticker wf-baseline-vertical" aria-label="Baseline">
+            <div className="mt-6 wf-fx-ticker" aria-label="Devises">
               <div>
-                <span>Structuration · dossiers solides · trajectoire claire</span>
-                <span>Structuration · dossiers solides · trajectoire claire</span>
-                <span>Structuration · dossiers solides · trajectoire claire</span>
+                <span>EUR / XOF : 655,957</span>
+                <span className="text-white/30">•</span>
+                <span>USD / XOF : 603,410</span>
+                <span className="text-white/30">•</span>
+                <span>XOF / EUR : 0,001524</span>
+                <span className="text-white/30">•</span>
+                <span>XOF / USD : 0,001657</span>
+                <span className="text-white/30">•</span>
+                <span>EUR / XOF : 655,957</span>
+                <span className="text-white/30">•</span>
+                <span>USD / XOF : 603,410</span>
+                <span className="text-white/30">•</span>
+                <span>XOF / EUR : 0,001524</span>
+                <span className="text-white/30">•</span>
+                <span>XOF / USD : 0,001657</span>
               </div>
             </div>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-              Cabinet stratégique financier africain : cadrage, analyse, livrables et accompagnement.
+              Secteur financier africain.
             </p>
             <p className="mt-3 text-sm text-white/65">Ouagadougou — interventions sur demande.</p>
 
@@ -172,52 +185,23 @@ export default function Home() {
             <div className="wf-card wf-soft-card rounded-2xl border p-4">Transparence • conformité</div>
           </div>
         </div>
+      </section>
 
+      <section className="mt-14">
         <div className="wf-reveal wf-card wf-surface rounded-3xl border p-6 sm:p-8">
           <div className="text-xs font-semibold tracking-[0.22em] text-[color:var(--brand-red)]">
-            SERVICES
+            CONFIANCE
           </div>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[color:var(--brand-bordeaux)] sm:text-3xl">
-            Domaines d’intervention
+            Pourquoi nous faire confiance
           </h2>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            {[
-              {
-                t: "Appui & Conseil en Finance",
-                d: "Analyse, cadrage, arbitrage et recommandations.",
-                href: "/services/appui-conseil-finance",
-              },
-              {
-                t: "Intermédiation & Mobilisation",
-                d: "Préparation des dossiers et accompagnement.",
-                href: "/services/intermediation-mobilisation",
-              },
-              {
-                t: "Étude & Projets d’Investissement",
-                d: "Chiffrage, rentabilité, structuration du projet.",
-                href: "/services/projets-investissement",
-              },
-              {
-                t: "Structuration & Gestion d’Entreprises",
-                d: "Outils, organisation, reporting et pilotage.",
-                href: "/services/structuration-gestion",
-              },
-            ].map((s) => (
-              <a
-                key={s.href}
-                href={s.href}
-                className="wf-card group rounded-2xl border border-black/10 bg-white/75 p-5 text-black transition hover:bg-white"
-              >
-                <div className="text-sm font-semibold text-[color:var(--brand-bordeaux)]">{s.t}</div>
-                <div className="mt-2 text-sm text-black/65">{s.d}</div>
-                <div className="mt-4 text-xs font-medium text-[color:var(--brand-red)]">Détails →</div>
-              </a>
-            ))}
-          </div>
+          <p className="mt-4 text-sm leading-relaxed text-black/70 sm:text-base">
+            Intégrité • Efficacité • Loyauté
+          </p>
         </div>
       </section>
 
-      <section className="mt-14 grid gap-10 lg:grid-cols-2 lg:items-start">
+      <section className="mt-14">
         <div className="wf-reveal wf-card wf-surface rounded-3xl border p-6 sm:p-8">
           <div className="text-xs font-semibold tracking-[0.22em] text-[color:var(--brand-red)]">
             MÉTHODE
@@ -245,31 +229,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-
-        <div className="wf-reveal wf-card wf-dark rounded-3xl border p-6 sm:p-8">
-          <div className="text-xs font-semibold tracking-[0.22em] text-[color:var(--gold)]">
-            CONFORMITÉ
-          </div>
-          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-            Conformité & Transparence
-          </h2>
-          <p className="mt-4 text-sm leading-relaxed text-white/75">
-            Informations claires, données protégées, engagements explicites.
-          </p>
-
-          <div className="mt-6 grid gap-3 text-sm text-white/85 sm:grid-cols-2">
-            <div className="wf-card rounded-2xl border border-white/15 bg-white/5 p-4">SARL • Burkina Faso</div>
-            <div className="wf-card rounded-2xl border border-white/15 bg-white/5 p-4">RCCM: BF OUA 01 2025 B12 20168</div>
-            <div className="wf-card rounded-2xl border border-white/15 bg-white/5 p-4">IFU: 00294900X</div>
-            <div className="wf-card rounded-2xl border border-white/15 bg-white/5 p-4">Capital: 10 000 000 FCFA</div>
-            <div className="wf-card rounded-2xl border border-white/15 bg-white/5 p-4">Date: 16 décembre 2025</div>
-            <div className="wf-card rounded-2xl border border-white/15 bg-white/5 p-4">Régime fiscal: RSI</div>
-          </div>
-
-          <div className="mt-6 rounded-2xl border border-white/15 bg-white/5 p-4 text-sm text-white/75">
-            WENDYAM FINANCE intervient en tant que cabinet de conseil et d’accompagnement financier et n’est pas un établissement bancaire, ni un établissement de crédit.
           </div>
         </div>
       </section>

@@ -606,6 +606,48 @@ body {
   filter: none;
 }
 
+.wf-fx-ticker {
+  position: relative;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    transparent 100%
+  );
+}
+
+.wf-fx-ticker > div {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  height: 44px;
+  padding: 0 16px;
+  white-space: nowrap;
+  will-change: transform;
+  animation: wfFxMarquee 18s linear infinite;
+}
+
+.wf-fx-ticker span {
+  font-size: 13px;
+  line-height: 44px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+@keyframes wfFxMarquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 .wf-slogan-marquee {
   position: relative;
   height: 44px;
@@ -855,6 +897,21 @@ body {
 @media (max-width: 640px) {
   .wf-slogan-ticker {
     height: 40px;
+  }
+
+  .wf-fx-ticker {
+    height: 40px;
+  }
+
+  .wf-fx-ticker > div {
+    height: 40px;
+    padding: 0 14px;
+    animation-duration: 20s;
+  }
+
+  .wf-fx-ticker span {
+    line-height: 40px;
+    font-size: 12px;
   }
 
   .wf-slogan-marquee {

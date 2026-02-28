@@ -27,17 +27,14 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-white/80 md:flex">
-          <Link className="hover:text-white" href="/services">
-            Services
+          <Link className="hover:text-white" href="/">
+            Accueil
           </Link>
-          <Link className="hover:text-white" href="/a-propos">
-            À propos
-          </Link>
-          <Link className="hover:text-white" href="/conformite">
-            Conformité
+          <Link className="hover:text-white" href="/gouvernance">
+            Gouvernance
           </Link>
           <Link className="hover:text-white" href="/contact">
-            Contact
+            Contacts
           </Link>
         </nav>
       </div>

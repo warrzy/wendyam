@@ -21,7 +21,7 @@ export const SITE = {
   incorporationDate: "16 décembre 2025",
   manager: "Monsieur Yamba Donald Charles KABORÉ",
   disclaimer:
-    "WENDYAM FINANCE intervient en tant que cabinet de conseil et d’accompagnement financier et n’est pas un établissement bancaire, ni un établissement de crédit.",
+    "Wendyam Finance intervient en tant que structure financière.",
 } as const;
 
 export function toTelHref(e164: string) {

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | WENDYAM FINANCE",
   },
   description:
-    "Cabinet de conseil et d’accompagnement financier (non bancaire) à Ouagadougou. Structuration d’entreprises, projets d’investissement, mobilisation de financement. Confidentialité, transparence, rigueur.",
+    "Cabinet de conseil et d’accompagnement financier à Ouagadougou. Structuration d’entreprises, projets d’investissement, mobilisation de financement. Confidentialité, transparence, rigueur.",
   metadataBase: new URL("https://wendyam-finance.com"),
   alternates: {
     canonical: "/",

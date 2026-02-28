@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -24,7 +25,7 @@ const SERVICES = [
   },
   {
     title: "Intermédiation & Mobilisation de Financement",
-    desc: "Préparation du dossier et accompagnement non bancaire.",
+    desc: "Préparation du dossier et accompagnement.",
     href: "/services/intermediation-mobilisation",
   },
 ] as const;
@@ -37,8 +38,7 @@ export default function ServicesPage() {
           Nos services
         </h1>
         <p className="mt-4 max-w-3xl text-sm leading-relaxed text-black/70 sm:text-base">
-          Choisissez l’accompagnement adapté à votre situation. Nous intervenons en tant que
-          cabinet de conseil et d’accompagnement financier — non bancaire.
+          Choisissez l’accompagnement adapté à votre situation.
         </p>
       </section>
 
@@ -63,7 +63,7 @@ export default function ServicesPage() {
         <div className="mt-5 grid gap-3">
           {[{
             q: "WENDYAM FINANCE est-il une banque ?",
-            a: "Non. WENDYAM FINANCE est un cabinet de conseil et d’accompagnement financier. Nous ne sommes pas un établissement bancaire, ni un établissement de crédit.",
+            a: SITE.disclaimer,
           },{
             q: "Travaillez-vous uniquement au Burkina Faso ?",
             a: "Nous sommes basés à Ouagadougou et intervenons également en Afrique selon les besoins et la nature des missions.",

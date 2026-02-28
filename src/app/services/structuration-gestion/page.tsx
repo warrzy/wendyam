@@ -4,14 +4,14 @@ import { ServicePageShell } from "@/components/ServicePageShell";
 export const metadata: Metadata = {
   title: "Structuration & Gestion d’Entreprises",
   description:
-    "Organisation, procédures, reporting et outils de gestion adaptés à votre croissance. Cabinet non bancaire à Ouagadougou.",
+    "Organisation, procédures, reporting et outils de gestion adaptés à votre croissance à Ouagadougou.",
 };
 
 export default function ServicePage() {
   return (
     <ServicePageShell
       title="Structuration & Gestion d’Entreprises"
-      description="Nous mettons en place les bases d’une entreprise solide : organisation, responsabilisation, procédures et outils de suivi. Cabinet de conseil — non bancaire."
+      description="Nous mettons en place les bases d’une entreprise solide : organisation, responsabilisation, procédures et outils de suivi."
       ctaLabel="Nous contacter"
       ctaHref="/contact"
     >

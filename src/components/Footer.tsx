@@ -55,9 +55,6 @@ export function Footer() {
             <Link className="text-white/70 hover:text-white" href="/confidentialite">
               Confidentialité
             </Link>
-            <Link className="text-white/70 hover:text-white" href="/conformite">
-              Conformité
-            </Link>
           </div>
         </div>
       </div>
