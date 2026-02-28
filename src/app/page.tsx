@@ -117,13 +117,13 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#contact"
-                className="wf-btn inline-flex items-center justify-center rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-[color:var(--btn-primary-hover)]"
+                className="wf-btn inline-flex h-11 items-center justify-center rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-6 text-sm font-semibold text-white transition hover:bg-[color:var(--btn-primary-hover)]"
               >
                 Nous contacter
               </a>
               <a
                 href="/contact"
-                className="wf-btn inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white/90 transition hover:bg-white/10"
+                className="wf-btn inline-flex h-11 items-center justify-center rounded-full border border-white/15 bg-transparent px-5 text-sm font-semibold text-white/80 transition hover:bg-white/5 hover:text-white"
               >
                 Contact rapide
               </a>

@@ -140,13 +140,13 @@ export default function ContactPage() {
               )}
               target="_blank"
               rel="noreferrer"
-              className="wf-btn inline-flex h-12 items-center justify-center rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-6 text-sm font-semibold text-white transition hover:bg-[color:var(--btn-primary-hover)]"
+              className="wf-btn inline-flex h-11 items-center justify-center rounded-full border border-black/10 bg-white px-5 text-sm font-semibold text-black/80 transition hover:bg-black/[0.02]"
             >
               WhatsApp
             </a>
             <a
               href={toTelHref(SITE.phonePrimaryE164)}
-              className="wf-btn inline-flex h-12 items-center justify-center rounded-full border border-black/10 bg-white px-6 text-sm font-semibold text-black/80 transition hover:bg-black/[0.02]"
+              className="wf-btn inline-flex h-11 items-center justify-center rounded-full border border-black/10 bg-white px-5 text-sm font-semibold text-black/80 transition hover:bg-black/[0.02]"
             >
               Appeler
             </a>

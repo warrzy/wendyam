@@ -62,7 +62,7 @@ export function TopBar() {
         <div className="flex items-center gap-2">
           <a
             href={toTelHref(SITE.phonePrimaryE164)}
-            className="wf-btn inline-flex items-center gap-2 rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-3 py-1 text-white shadow-[0_14px_34px_rgba(0,0,0,.22)] transition hover:bg-[color:var(--btn-primary-hover)]"
+            className="wf-btn inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-white/85 transition hover:bg-white/10"
           >
             <IconPhone className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">{SITE.phonePrimaryDisplay}</span>
@@ -72,14 +72,14 @@ export function TopBar() {
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="wf-btn inline-flex items-center rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-3 py-1 text-white shadow-[0_14px_34px_rgba(0,0,0,.22)] transition hover:bg-[color:var(--btn-primary-hover)]"
+            className="wf-btn inline-flex items-center rounded-full border border-white/15 bg-white/5 px-3 py-1 text-white/85 transition hover:bg-white/10"
           >
             Autres numéros
           </button>
 
           <a
             href={toMailtoHref(SITE.email)}
-            className="wf-btn hidden items-center gap-2 rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-3 py-1 text-white shadow-[0_14px_34px_rgba(0,0,0,.22)] transition hover:bg-[color:var(--btn-primary-hover)] sm:inline-flex"
+            className="wf-btn hidden items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-white/85 transition hover:bg-white/10 sm:inline-flex"
           >
             <IconMail className="h-3.5 w-3.5" />
             {SITE.email}
@@ -105,7 +105,7 @@ export function TopBar() {
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className="wf-btn rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-3 py-1 text-xs font-semibold text-white shadow-[0_14px_34px_rgba(0,0,0,.22)] transition hover:bg-[color:var(--btn-primary-hover)]"
+                className="wf-btn rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold text-white/85 transition hover:bg-white/10"
               >
                 Fermer
               </button>
@@ -116,7 +116,7 @@ export function TopBar() {
                 <a
                   key={p.e164}
                   href={toTelHref(p.e164)}
-                  className="wf-btn flex items-center justify-between rounded-xl border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-4 py-3 text-white shadow-[0_14px_34px_rgba(0,0,0,.18)] transition hover:bg-[color:var(--btn-primary-hover)]"
+                  className="wf-btn flex items-center justify-between rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-white/85 transition hover:bg-white/10"
                 >
                   <div className="flex flex-col">
                     <span className="text-sm font-medium text-white/90">{p.display}</span>

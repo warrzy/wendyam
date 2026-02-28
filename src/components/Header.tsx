@@ -76,10 +76,10 @@ export function Header() {
           </Link>
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="hidden items-center gap-3 text-xs text-white/75 sm:flex">
           <a
             href={toTelHref(SITE.phonePrimaryE164)}
-            className="wf-btn hidden rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-4 py-2 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(0,0,0,.22)] transition hover:bg-[color:var(--btn-primary-hover)] sm:inline-flex"
+            className="wf-btn inline-flex items-center rounded-full border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/85 transition hover:bg-white/10"
           >
             Appeler
           </a>
@@ -88,9 +88,10 @@ export function Header() {
               SITE.whatsappE164,
               "Bonjour WENDYAM FINANCE, je souhaite un accompagnement."
             )}
-            className="wf-btn inline-flex items-center gap-2 rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-4 py-2 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(0,0,0,.22)] transition hover:bg-[color:var(--btn-primary-hover)]"
+            className="wf-btn inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 font-semibold text-white/85 transition hover:bg-white/10"
             target="_blank"
             rel="noreferrer"
+            aria-label="Contacter sur WhatsApp"
           >
             <IconWhatsApp className="h-4 w-4" />
             WhatsApp
