@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SITE, toMailtoHref, toTelHref, toWhatsAppHref } from "@/lib/site";
+import { SITE, toMailtoHref, toTelHref } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -18,16 +18,6 @@ export function Footer() {
             <div>
               <a className="hover:text-white" href={toTelHref(SITE.phonePrimaryE164)}>
                 {SITE.phonePrimaryDisplay}
-              </a>
-            </div>
-            <div>
-              <a
-                className="hover:text-white"
-                href={toWhatsAppHref(SITE.whatsappE164)}
-                target="_blank"
-                rel="noreferrer"
-              >
-                WhatsApp: {SITE.whatsappDisplay}
               </a>
             </div>
             <div>

@@ -40,7 +40,7 @@ export function Header() {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm text-white/80 md:flex">
+        <nav className="hidden items-center gap-6 text-sm text-[color:var(--brand-red)] md:flex">
           <Link className="hover:text-white" href="/">
             Accueil
           </Link>
@@ -98,21 +98,21 @@ export function Header() {
               <Link
                 href="/"
                 onClick={() => setMobileOpen(false)}
-                className="wf-btn rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white/90 transition hover:bg-white/10"
+                className="wf-btn rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-[color:var(--brand-red)] transition hover:bg-white/10"
               >
                 Accueil
               </Link>
               <Link
                 href="/gouvernance"
                 onClick={() => setMobileOpen(false)}
-                className="wf-btn rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white/90 transition hover:bg-white/10"
+                className="wf-btn rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-[color:var(--brand-red)] transition hover:bg-white/10"
               >
                 Gouvernance
               </Link>
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="wf-btn rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white/90 transition hover:bg-white/10"
+                className="wf-btn rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-[color:var(--brand-red)] transition hover:bg-white/10"
               >
                 Contacts
               </Link>

@@ -122,10 +122,10 @@ export default function Home() {
               </div>
             </div>
 
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-              Secteur financier africain.
+            <p className="mt-6 text-sm text-white/70">Ouagadougou et partout où vous êtes</p>
+            <p className="mt-3 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+              STRUCTURE FINANCIÈRE AFRICAINE
             </p>
-            <p className="mt-3 text-sm text-white/65">Ouagadougou — interventions sur demande.</p>
 
             <div className="mt-7 flex flex-col gap-2 sm:mt-8 sm:gap-3 sm:flex-row">
               <a
@@ -144,19 +144,18 @@ export default function Home() {
           </div>
 
           <div className="grid gap-4">
-            <div className="wf-visual-static" aria-label="Méthode (secondaire)">
-              <div className="text-xs font-semibold tracking-[0.24em] text-white/60">MÉTHODE</div>
-              <div className="mt-3 text-lg font-semibold text-white/85">Trajectoire de mission</div>
+            <div className="wf-visual-static" aria-label="Rubrique">
+              <div className="text-xs font-semibold tracking-[0.24em] text-white/60">RUBRIQUE</div>
+              <div className="mt-3 text-lg font-semibold text-white/85">Nos offres</div>
               <div className="mt-5 grid gap-3">
                 {[
-                  { t: "Cadrage", d: "Objectif, périmètre, informations clés." },
-                  { t: "Diagnostic", d: "Lecture financière, risques, leviers." },
-                  { t: "Dossier", d: "Argumentaire, chiffrage, pièces & livrables." },
-                  { t: "Accompagnement", d: "Suivi, ajustements, mise en œuvre." },
-                ].map((s) => (
-                  <div key={s.t} className="wf-visual-static-item">
-                    <div className="text-sm font-semibold text-white/85">{s.t}</div>
-                    <div className="mt-1 text-xs text-white/60">{s.d}</div>
+                  "Mobile Money et transfert",
+                  "Change manuel",
+                  "Produits financiers",
+                  "Accompagnement",
+                ].map((t) => (
+                  <div key={t} className="wf-visual-static-item">
+                    <div className="text-sm font-semibold text-white/85">{t}</div>
                   </div>
                 ))}
               </div>
@@ -171,12 +170,13 @@ export default function Home() {
             À PROPOS
           </div>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[color:var(--brand-bordeaux)] sm:text-3xl">
-            Cabinet stratégique financier africain
+            À propos
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-black/70 sm:text-base">
-            WENDYAM FINANCE est un cabinet de conseil et d’accompagnement financier basé à
-            Ouagadougou. Notre rôle : clarifier la situation, structurer les informations utiles et
-            produire des livrables exploitables pour la décision et l’exécution.
+            WENDYAM FINANCE est une structure financière basée à Ouagadougou.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-black/70 sm:text-base">
+            Notre rôle : offrir des produits financiers adaptés à votre besoin de croissance.
           </p>
           <div className="mt-6 grid gap-3 text-sm text-black/70 sm:grid-cols-2">
             <div className="wf-card wf-soft-card rounded-2xl border p-4">Ancrage local • Ouagadougou</div>
@@ -190,46 +190,14 @@ export default function Home() {
       <section className="mt-14">
         <div className="wf-reveal wf-card wf-surface rounded-3xl border p-6 sm:p-8">
           <div className="text-xs font-semibold tracking-[0.22em] text-[color:var(--brand-red)]">
-            CONFIANCE
+            VALEURS
           </div>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[color:var(--brand-bordeaux)] sm:text-3xl">
-            Pourquoi nous faire confiance
+            Nos Valeurs
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-black/70 sm:text-base">
             Intégrité • Efficacité • Loyauté
           </p>
-        </div>
-      </section>
-
-      <section className="mt-14">
-        <div className="wf-reveal wf-card wf-surface rounded-3xl border p-6 sm:p-8">
-          <div className="text-xs font-semibold tracking-[0.22em] text-[color:var(--brand-red)]">
-            MÉTHODE
-          </div>
-          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[color:var(--brand-bordeaux)] sm:text-3xl">
-            Notre méthode de travail
-          </h2>
-          <div className="relative mt-6">
-            <div className="absolute left-3 top-1 bottom-1 w-px bg-[rgba(152,0,1,.18)]" />
-            <div className="grid gap-3">
-              {[
-                { t: "Analyse", d: "Cadrage de l’objectif et collecte des informations utiles." },
-                { t: "Diagnostic", d: "Évaluation de la situation, des risques et des leviers." },
-                { t: "Proposition", d: "Options claires, chiffrées et argumentées." },
-                { t: "Accompagnement", d: "Mise en œuvre, suivi et ajustements." },
-              ].map((step, idx) => (
-                <div key={step.t} className="relative pl-10">
-                  <div className="absolute left-0 top-5 grid h-6 w-6 place-items-center rounded-full border border-[rgba(152,0,1,.28)] bg-white text-xs font-semibold text-[color:var(--brand-red)]">
-                    {idx + 1}
-                  </div>
-                  <div className="wf-card rounded-2xl border border-[rgba(152,0,1,.12)] bg-white p-4">
-                    <div className="text-sm font-semibold text-black/85">{step.t}</div>
-                    <div className="mt-1 text-sm text-black/60">{step.d}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
