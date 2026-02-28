@@ -42,7 +42,7 @@ export default function Home() {
               >
                 <div className="wf-hero-media">
                   <Image
-                    src="/brand/pile-de-billets-franc-cfa-2h14ej8-removebg-preview.png"
+                    src="/brand/lieux-africa-2-zsolt-adobe-stock-597216344-2993525705.jpg"
                     alt="Illustration"
                     fill
                     sizes="(min-width: 1024px) 560px, (min-width: 640px) 520px, 92vw"

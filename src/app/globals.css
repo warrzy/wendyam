@@ -4,8 +4,8 @@
   --brand-red: #980001;
   --brand-bordeaux: #5e0000;
   --ivory: #f8f4f1;
-  --brand-blue: #0f2a44;
-  --brand-blue-2: #071a2f;
+  --brand-blue: #0a1f33;
+  --brand-blue-2: #061426;
   --gold: #c8a24a;
 
   --btn-primary: var(--brand-bordeaux);
@@ -41,9 +41,9 @@ body {
   min-height: 100vh;
   background-color: var(--background);
   background-image:
-    radial-gradient(900px 700px at 18% 14%, rgba(200, 162, 74, 0.12), transparent 62%),
-    radial-gradient(900px 700px at 86% 10%, rgba(15, 42, 68, 0.06), transparent 58%),
-    radial-gradient(1100px 900px at 50% 120%, rgba(15, 42, 68, 0.04), transparent 62%);
+    radial-gradient(900px 700px at 18% 14%, rgba(200, 162, 74, 0.1), transparent 62%),
+    radial-gradient(900px 700px at 86% 10%, rgba(10, 31, 51, 0.055), transparent 58%),
+    radial-gradient(1100px 900px at 50% 120%, rgba(6, 20, 38, 0.04), transparent 62%);
   background-size: auto, auto;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 18% 14%, 86% 10%, 50% 120%;
