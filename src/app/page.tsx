@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden pb-10 sm:pb-16">
       <section className="wf-reveal wf-card wf-hero wf-dark rounded-3xl border p-6 sm:p-10 lg:p-12">
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-10">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs text-white/80">
               <span className="font-medium text-white">Autorité</span>
@@ -17,7 +17,7 @@ export default function Home() {
             </div>
 
             <div
-              className="wf-hero-carousel mt-7"
+              className="wf-hero-carousel mt-6 sm:mt-7"
               aria-label="Hero"
               style={
                 {
@@ -27,7 +27,7 @@ export default function Home() {
               }
             >
               <div className="wf-hero-carousel-slide wf-hero-carousel-text" style={{ "--wf-hero-slide-index": 0 } as CSSProperties}>
-                <h1 className="text-4xl font-semibold leading-[1.02] tracking-[-0.02em] text-white sm:text-6xl">
+                <h1 className="text-[32px] font-semibold leading-[1.04] tracking-[-0.02em] text-white sm:text-6xl">
                   UN SOUTIEN,
                   <br />
                   UNE SOLUTION,
@@ -127,7 +127,7 @@ export default function Home() {
               STRUCTURE FINANCIÈRE AFRICAINE
             </p>
 
-            <div className="mt-7 flex flex-col gap-2 sm:mt-8 sm:gap-3 sm:flex-row">
+            <div className="mt-6 flex flex-col gap-2 sm:mt-8 sm:gap-3 sm:flex-row">
               <a
                 href="#contact"
                 className="wf-btn inline-flex h-10 items-center justify-center rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-5 text-sm font-semibold text-white transition hover:bg-[color:var(--btn-primary-hover)] sm:h-11 sm:px-6"
