@@ -23,6 +23,16 @@
   --accent-2: var(--gold);
 }
 
+@media (max-width: 380px) {
+  .wf-hero-media {
+    width: 100%;
+  }
+
+  .wf-hero-media::before {
+    inset: -8px;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -223,6 +233,7 @@ html {
   position: relative;
   isolation: isolate;
   min-height: 170px;
+  overflow: hidden;
 }
 
 .wf-hero-carousel-image {
@@ -242,6 +253,7 @@ html {
 .wf-hero-carousel-slide {
   position: absolute;
   inset: 0;
+  width: 100%;
   z-index: 0;
   opacity: 0;
   visibility: hidden;
