@@ -45,7 +45,7 @@ export default function GouvernancePage() {
             <div>RCCM: {SITE.rccm}</div>
             <div>IFU: {SITE.ifu}</div>
             <div>Capital: {SITE.capital}</div>
-            <div>Date: {SITE.incorporationDate}</div>
+            <div>Valeurs: {SITE.values}</div>
             <div>Régime fiscal: {SITE.fiscalRegime}</div>
           </div>
         </div>

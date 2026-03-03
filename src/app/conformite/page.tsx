@@ -33,7 +33,7 @@ export default function CompliancePage() {
             <div className="wf-card wf-dark-card rounded-2xl border p-4">RCCM: {SITE.rccm}</div>
             <div className="wf-card wf-dark-card rounded-2xl border p-4">IFU: {SITE.ifu}</div>
             <div className="wf-card wf-dark-card rounded-2xl border p-4">Capital: {SITE.capital}</div>
-            <div className="wf-card wf-dark-card rounded-2xl border p-4">Date: {SITE.incorporationDate}</div>
+            <div className="wf-card wf-dark-card rounded-2xl border p-4">Valeurs: {SITE.values}</div>
             <div className="wf-card wf-dark-card rounded-2xl border p-4">Régime fiscal: {SITE.fiscalRegime}</div>
             <div className="wf-card wf-dark-card rounded-2xl border p-4">Adresse: {SITE.address}</div>
           </div>

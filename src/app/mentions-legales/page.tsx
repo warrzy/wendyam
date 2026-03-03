@@ -27,7 +27,7 @@ export default function LegalPage() {
           <div className="wf-card wf-dark-card rounded-2xl border p-4">RCCM: {SITE.rccm}</div>
           <div className="wf-card wf-dark-card rounded-2xl border p-4">IFU: {SITE.ifu}</div>
           <div className="wf-card wf-dark-card rounded-2xl border p-4">Capital social: {SITE.capital}</div>
-          <div className="wf-card wf-dark-card rounded-2xl border p-4">Date de constitution: {SITE.incorporationDate}</div>
+          <div className="wf-card wf-dark-card rounded-2xl border p-4">Valeurs: {SITE.values}</div>
           <div className="wf-card wf-dark-card rounded-2xl border p-4">Régime fiscal: {SITE.fiscalRegime}</div>
           <div className="wf-card wf-dark-card rounded-2xl border p-4">Gérance: {SITE.manager}</div>
         </div>

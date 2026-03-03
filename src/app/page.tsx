@@ -215,7 +215,7 @@ export default function Home() {
 
             <div className="mt-6 grid gap-3 text-sm text-black/70">
               <div className="wf-card wf-soft-card rounded-2xl border p-4">Ouagadougou — interventions sur demande.</div>
-              <div className="wf-card wf-soft-card rounded-2xl border p-4">WhatsApp et click-to-call disponibles.</div>
+              <div className="wf-card wf-soft-card rounded-2xl border p-4">Click-to-call disponible.</div>
             </div>
           </div>
 

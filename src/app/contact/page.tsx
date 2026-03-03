@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { SITE, toMailtoHref, toTelHref, toWhatsAppHref } from "@/lib/site";
+import { SITE, toMailtoHref, toTelHref } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez WENDYAM FINANCE à Ouagadougou. Réponse sous 24–48h. WhatsApp et click-to-call disponibles.",
+    "Contactez WENDYAM FINANCE à Ouagadougou. Réponse sous 24–48h. Click-to-call disponible.",
 };
 
 export default function ContactPage() {
@@ -115,14 +115,6 @@ export default function ContactPage() {
               <a className="text-black hover:underline" href={toTelHref(SITE.phonesOther[0].e164)}>
                 {SITE.phonesOther[0].display}
               </a>
-              {" • "}
-              <a className="text-black hover:underline" href={toTelHref(SITE.phonesOther[1].e164)}>
-                {SITE.phonesOther[1].display}
-              </a>
-              {" "}
-              <span className="ml-2 rounded-full border border-black/10 bg-white px-2 py-0.5 text-xs text-black/70">
-                WhatsApp
-              </span>
             </div>
             <div className="wf-card wf-soft-card rounded-2xl border p-4">
               Email: {" "}
@@ -133,17 +125,6 @@ export default function ContactPage() {
           </div>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-            <a
-              href={toWhatsAppHref(
-                SITE.whatsappE164,
-                "Bonjour WENDYAM FINANCE, je souhaite un accompagnement."
-              )}
-              target="_blank"
-              rel="noreferrer"
-              className="wf-btn inline-flex h-11 items-center justify-center rounded-full border border-black/10 bg-white px-5 text-sm font-semibold text-black/80 transition hover:bg-black/[0.02]"
-            >
-              WhatsApp
-            </a>
             <a
               href={toTelHref(SITE.phonePrimaryE164)}
               className="wf-btn inline-flex h-11 items-center justify-center rounded-full border border-black/10 bg-white px-5 text-sm font-semibold text-black/80 transition hover:bg-black/[0.02]"
