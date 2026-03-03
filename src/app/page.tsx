@@ -8,7 +8,7 @@ export default function Home() {
       <section className="wf-reveal wf-card wf-hero wf-dark rounded-3xl border p-6 sm:p-10 lg:p-12">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-10">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs text-white/80">
+            <div className="inline-flex flex-wrap items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs text-white/80 sm:justify-start">
               <span className="font-medium text-white">Autorité</span>
               <span className="text-white/25">•</span>
               <span className="font-medium text-white">Croissance</span>
@@ -127,16 +127,16 @@ export default function Home() {
               STRUCTURE FINANCIÈRE AFRICAINE
             </p>
 
-            <div className="mt-6 flex flex-col gap-2 sm:mt-8 sm:gap-3 sm:flex-row">
+            <div className="mt-6 flex flex-col items-center gap-2 sm:mt-8 sm:flex-row sm:items-start sm:gap-3">
               <a
                 href="#contact"
-                className="wf-btn inline-flex h-10 items-center justify-center rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-5 text-sm font-semibold text-white transition hover:bg-[color:var(--btn-primary-hover)] sm:h-11 sm:px-6"
+                className="wf-btn inline-flex h-10 w-full max-w-[360px] items-center justify-center rounded-full border border-[color:var(--btn-border)] bg-[color:var(--btn-primary)] px-5 text-sm font-semibold text-white transition hover:bg-[color:var(--btn-primary-hover)] sm:h-11 sm:w-auto sm:max-w-none sm:px-6"
               >
                 Nous contacter
               </a>
               <a
                 href="/contact"
-                className="wf-btn inline-flex h-10 items-center justify-center rounded-full border border-white/15 bg-transparent px-4 text-sm font-semibold text-white/80 transition hover:bg-white/5 hover:text-white sm:h-11 sm:px-5"
+                className="wf-btn inline-flex h-10 w-full max-w-[360px] items-center justify-center rounded-full border border-white/15 bg-transparent px-4 text-sm font-semibold text-white/80 transition hover:bg-white/5 hover:text-white sm:h-11 sm:w-auto sm:max-w-none sm:px-5"
               >
                 Contact rapide
               </a>
@@ -195,7 +195,7 @@ export default function Home() {
             Nos Valeurs
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-black/70 sm:text-base">
-            Intégrité • Efficacité • Loyauté
+            {SITE.values}
           </p>
         </div>
       </section>
@@ -219,7 +219,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className="mx-auto w-full max-w-[520px] lg:mx-0 lg:max-w-none">
             <form className="grid gap-4 md:grid-cols-2" method="post" action="/api/contact">
               <input name="company" className="hidden" tabIndex={-1} autoComplete="off" />
               <label className="grid gap-2 text-sm text-black/70">

@@ -20,8 +20,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[color:var(--brand-blue)]">
       <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4 lg:px-8">
-        <Link href="/" className="group flex items-center gap-3">
-          <div className="relative h-9 w-9 sm:h-[52px] sm:w-[52px]">
+        <Link href="/" className="group flex min-w-0 items-center gap-3">
+          <div className="relative h-9 w-9 flex-none sm:h-[52px] sm:w-[52px]">
             <div className="relative h-full w-full">
               <Image
                 src="/brand/logo.png"
@@ -34,9 +34,9 @@ export function Header() {
               />
             </div>
           </div>
-          <div className="leading-tight">
-            <div className="text-[13px] font-semibold tracking-wide text-white sm:text-sm">{SITE.name}</div>
-            <div className="text-[10px] text-white/70 sm:text-[11px]">{SITE.slogan}</div>
+          <div className="min-w-0 leading-tight">
+            <div className="truncate text-[13px] font-semibold tracking-wide text-white sm:text-sm">{SITE.name}</div>
+            <div className="line-clamp-2 text-[10px] leading-snug text-white/70 sm:text-[11px]">{SITE.slogan}</div>
           </div>
         </Link>
 
